@@ -20,6 +20,7 @@ function App() {
             <header>Shorter</header>
             <footer>
                 <ToggleButton
+                    elementId='editmode-toggle-button'
                     onState={appState.isEditMode}
                     onFunc={() => {
                         dispatch(toggleEditMode(null));
@@ -29,8 +30,6 @@ function App() {
                     }}
                     className={'bg-green-600'}
                     buttonOffContent='button off' buttonOnContent='button on'/>
-
-
             </footer>
         </div>
     );
