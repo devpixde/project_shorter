@@ -1,0 +1,12 @@
+services:
+  develop:
+    build: .
+    container_name: shorter-dev-container
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/app/src
+      - /app/node_modules/
+    entrypoint:
+      - npm
+      - start
